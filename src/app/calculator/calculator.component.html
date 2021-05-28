@@ -1,0 +1,40 @@
+<h1>Simple Calculator</h1>
+  <fieldset>
+    <legend>Calculator</legend>
+    <table>
+      <tr>
+        <td>First operand: </td>
+        <td><input name="first-operand" type="number" [(ngModel)]="calculator.first"></td>
+      </tr>
+      <tr>
+<!--        <td>Operator: </td>-->
+<!--        <td>-->
+<!--          <select name="operator">-->
+<!--            <option value="+">Addition</option>-->
+<!--            <option value="-">Subtraction</option>-->
+<!--            <option value="*">Multiplication</option>-->
+<!--            <option value="/">Division</option>-->
+<!--          </select>-->
+<!--        </td>-->
+      </tr>
+      <tr>
+        <td>Second operand: </td>
+        <td><input name="second-operand" type="number" [(ngModel)]="calculator.second"></td>
+      </tr>
+      <tr>
+
+
+      </tr>
+    </table>
+    <input type="submit" value="Addition" (click)="calculate('+')">
+    <input type="submit" value="Subtraction" (click)="calculate('-')">
+    <input type="submit" value="Multiplication" (click)="calculate('*')">
+    <input type="submit" value="Division" (click)="calculate('/')">
+<!--    <h3>First: {{calculator.first}}</h3>-->
+<!--    <h3>Second: {{calculator.second}}</h3>-->
+<!--    <h3>Result Addition: {{calculator.second + calculator.first}}</h3>-->
+<!--    <h3>Result Subtraction: {{calculator.first - calculator.second}}</h3>-->
+<!--    <h3>Result Multiplication: {{calculator.first * calculator.second}}</h3>-->
+<!--    <h3>Result Division: {{calculator.first / calculator.second}}</h3>-->
+    <h3>Result: {{calculator.result}}</h3>
+  </fieldset>
